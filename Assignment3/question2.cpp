@@ -40,7 +40,7 @@ int main(){
 
 Time* timeArray = new Time[3];
 
-    // Set and print the times for each object
+    //
     for (int i = 0; i < 3; ++i) {
         int h, m, s;
         cout << "Enter the time (hh mm ss) for object " << i + 1 << ": ";
@@ -49,7 +49,7 @@ Time* timeArray = new Time[3];
         timeArray[i].printTime();
     }
 
-    // Deallocate the dynamically allocated memory
+   
     delete[] timeArray;
 
 return 0;

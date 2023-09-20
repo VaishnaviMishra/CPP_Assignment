@@ -1,13 +1,11 @@
-/*
-Q3. Create a namespace NStudent. Create the Student class(created
-as per assignment-1 Q3) inside namespace. Test the functionalities.*/
+
 
 #include <iostream>
 #include <string>
 
-// Create a namespace NStudent
+
 namespace NStudent {
-    // Define the Student class
+    
     class Student {
     private:
         int rollNo;
@@ -15,32 +13,32 @@ namespace NStudent {
         float marks;
 
     public:
-        // Constructor to initialize student data
+        
         Student() {
             rollNo = 0;
             name = "";
             marks = 0.0;
         }
 
-        // Function to initialize a student
+       
         void initStudent() {
             std::cout << "Enter Roll No: ";
             std::cin >> rollNo;
-            std::cin.ignore(); // Ignore the newline character in the input buffer
+            std::cin.ignore(); 
             std::cout << "Enter Name: ";
             std::getline(std::cin, name);
             std::cout << "Enter Marks: ";
             std::cin >> marks;
         }
 
-        // Function to print student details on the console
+        
         void printStudentOnConsole() {
             std::cout << "Roll No: " << rollNo << std::endl;
             std::cout << "Name: " << name << std::endl;
             std::cout << "Marks: " << marks << std::endl;
         }
 
-        // Function to accept student details from the console
+        
         void acceptStudentFromConsole() {
             initStudent();
         }
@@ -48,7 +46,7 @@ namespace NStudent {
 }
 
 int main() {
-    // Create a student object inside the NStudent namespace
+   
     NStudent::Student student;
 
     int choice;
